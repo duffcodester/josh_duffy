@@ -1,11 +1,9 @@
 JoshDuffy::Application.routes.draw do
-  get "static_pages/home"
+  root to: 'static_pages#home'
 
-  get "static_pages/help"
-
-  get "static_pages/about"
-
-  get "static_pages/contact"
+  match '/contact', to: 'static_pages#contact'
+  match '/portfolio', to: 'static_pages#portfolio'
+  match '/resume', to: 'static_pages#resume'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

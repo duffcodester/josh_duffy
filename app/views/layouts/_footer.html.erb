@@ -1,13 +1,11 @@
-<footer class="footer">
-  <small>
-    <a href="http://railstutorial.org/">Rails Tutorial</a>
-    by Michael Hartl
-  </small>
-  <nav>
-    <ul>
-      <li><%= link_to "About",   '#' %></li>
-      <li><%= link_to "Contact", '#' %></li>
-      <li><a href="http://news.railstutorial.org/">News</a></li>
-    </ul>
-  </nav>
+<footer class="navbar-static-bottom">
+  <div class="container">
+    <div class="links">
+        <%= link_to "About",      about_path %>
+        <%= link_to "Portfolio",  portfolio_path %>
+        <%= link_to "Contact",    contact_path %>
+        <%= link_to "Home",       root_path %>
+    </div>
+    Created by Josh Duffy. Based on <a href="http://bootswatch.com/slate/">Bootstrap theme: "Slate"</a>
+  </div>
 </footer>
