@@ -10,8 +10,4 @@ class StaticPagesController < ApplicationController
 
   def contact
   end
-
-  def download
-    send_file 
-  end
 end
